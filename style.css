@@ -4,6 +4,7 @@
 *{
     margin: 0 !important;
     padding: 0;
+    font-family: Bahnschrift Condensed;
 }
 
 .icon-bar {
@@ -66,7 +67,33 @@
 .img_map{
     background-image: url('images/landscape2-44237cb6.jpeg');
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    overflow: hidden;
+    padding: 10px 52px;
 }
+.img_map_1{
+    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+.img_map_2{
+    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    overflow: hidden;
+}
+.img_map_4{
+    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+    overflow: hidden;
+}
+
 .other{
     background-image: url('images/landscape2-44237cb6.jpeg');
     background-repeat: no-repeat;
@@ -103,8 +130,20 @@
     text-shadow: 1px 1px 2px orange;
 }
 footer{
-  background-image: url('images/footer_image-1.jpg');
+  /* background-image: url('images/footer_image-1.jpg'); */
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+  background-color: rgb(255, 255, 255);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined{
+  color: orange;
 }
