@@ -641,7 +641,7 @@
 
             </div>
             <div class="col-md-6 position-relative img_box" style="overflow: hidden; margin-bottom: 10px;">
-                <img src="images/kailash (65).JPG" alt="" width="100%">
+                <img src="images/kailash (65).jpg" alt="" width="100%">
             </div>
         </div>
         <section class="container-fluid" style="background-color: rgba(0, 0, 0, 0.57); width: 100% !important;">
@@ -659,6 +659,33 @@
                             <li><button onclick="toggleSection('menu7')">ROUTE MAP <span> &#8594;</span></button></li>
                         </ul>
                     </div>
+                    <div class="register">
+                        <span style="color: white; text-align: center; display: flex; padding: 10px 30px;">To Download Apprication Form, Brochures, Route Maps, etc. Fill This Form:</span>
+                        <form action="action.php" method="post" name="emailContact">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="Name" placeholder="Name *" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" name="Email" placeholder="Email *" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="tel" name="Phone" placeholder="Mobile No. *" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="button" type="submit" name="Enter" value="Submit">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
                     <div id="download"
                         style="display: flex; flex-direction: column; text-align: justify; padding: 0px 50px; background: none; width: 100%;">
                         <a href="images/KMSApplicationForm2018.pdf" style="margin: 10px 20px; color: white;"><i
@@ -673,7 +700,29 @@
                                 style="font-size: xx-large;"></i> Route Map2</a>
                     </div>
                 </div>
-        
+                
+                <style>
+                    .register{
+
+                        padding: 10px 20px;
+                    }
+                    .register table tr td{
+                        padding-bottom: 5px;
+                    }
+                    .register table tr td input{
+                        padding: 5px 40px;
+                    }
+                    .register table tr td .button{
+                        background-color: orange;
+                        color: white;
+                        font-weight: bolder;
+                        font-size: larger;
+                    }
+                    #download{
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                </style>
                 <div id="content-part" class="col-md-9">
                     <ul>
         

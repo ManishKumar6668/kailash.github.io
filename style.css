@@ -72,6 +72,16 @@
     overflow: hidden;
     padding: 10px 52px;
 }
+@media (max-width:450px){
+  .img_map{
+    background-image: url('images/landscape2-44237cb6.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+}
 .img_map_1{
     background-image: url('images/olympic-national-park-top-view.jpg');
     background-repeat: no-repeat;

@@ -12,14 +12,16 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
     <style>
-        @media (max-width: 450px){
-            .logo .bird{
+        @media (max-width: 450px) {
+            .logo .bird {
                 width: 50;
             }
-            .logo .c-name{
+
+            .logo .c-name {
                 display: none;
             }
-            .logo .vr{
+
+            .logo .vr {
                 display: none;
             }
         }
@@ -38,13 +40,13 @@
     <!-- Social Media Icons And Contact Number Ends-->
     <!-- Navigation Bar Starts -->
     <div class="d-flex justify-content-evenly">
-        <div class="d-flex align-items-center ">
+        <div class="d-flex align-items-center logo">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo" width="100">
+                <img src="images/logo.png" class="bird" alt="Logo" width="100">
             </a>
             <div class="vr" style="height: 3rem; align-self: center;"></div>
             <a class="navbar-brand" href="index.html">
-                <img src="images/company_name_logo.png" alt="Logo" width="250">
+                <img src="images/company_name_logo.png" class="c-name" alt="Logo" width="250">
             </a>
         </div>
         <nav class="navbar navbar-expand-md ">
@@ -89,7 +91,8 @@
                                 Kailash Manas Sarovar Yatra
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="kailash_yatra.html">Kailash Manas Sarovar Yatra</a></li>
+                                <li><a class="dropdown-item" href="kailash_yatra.html">Kailash Manas Sarovar Yatra</a>
+                                </li>
                                 <li><a class="dropdown-item" href="by_helicopter.html">By Helicopter (10 Days)</a></li>
                                 <li><a class="dropdown-item" href="by_road.html">By Overland (13 Days)</a></li>
                             </ul>
@@ -188,17 +191,27 @@
     <!-- Scroll Down navbar Ends -->
 
     <!-- Section 1 Starts -->
-    <div class="d-grid position-relative " style="place-items: center; height: 100vh;">
+    <div class="d-grid position-relative slider " style="">
         <div class="img_slider"></div>
         <style>
+            .slider {
+                place-items: center;
+                height: 100vh;
+            }
+
             .img_slider {
                 width: 100%;
                 height: 100%;
                 background-image: url('images/slider1.jpg');
-                background-size: 100% 100%;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
                 animation: changeImage 25s linear infinite;
             }
-
+            @media (max-width:450px){
+                .slider{
+                    height: 25vh;
+                }
+            }
             @keyframes changeImage {
                 0% {
                     background-image: url('images/slider1.jpg');
@@ -215,12 +228,15 @@
                 45% {
                     background-image: url('images/slider4.jpg');
                 }
+
                 60% {
                     background-image: url('images/slider5.jpg');
                 }
+
                 75% {
                     background-image: url('images/slider6.jpg');
                 }
+
                 95% {
                     background-image: url('images/slider7.jpg');
                 }
@@ -331,10 +347,10 @@
     </section>
     <style>
         .section1 {
-            background-image: url('images/kailash\ \(17\).JPG');
+            background-image: url('images/kailash\ \(17\).jpg');
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            object-fit:fill;
+            object-fit: fill;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -389,60 +405,67 @@
             opacity: 1;
             transform: translateY(-170px);
         }
-        @media (max-width:400px){
+
+        @media (max-width:400px) {
             .section1 {
-            background-image: url('images/kailash\ \(17\).JPG');
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            object-fit:fill;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: arial;
-        }
-        .s1cards {
-            position: relative;
-            height: 450px;
-            border-radius: 1px;
-            /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
-            transition: 1s;
-            /*transform: translateY(150px);*/
-            padding: 30px 50px;
-            background: rgba(211, 211, 211, 0);
-            cursor: pointer;
-        }
+                background-image: url('images/kailash\ \(17\).jpg');
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                object-fit: fill;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: arial;
+            }
+
+            .s1cards {
+                position: relative;
+                height: 450px;
+                border-radius: 1px;
+                /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
+                transition: 1s;
+                /*transform: translateY(150px);*/
+                padding: 30px 50px;
+                background: rgba(211, 211, 211, 0);
+                cursor: pointer;
+            }
+
             .s1cards:hover .content {
-            opacity: 1;
-            transform: translateY(-250px);
+                opacity: 1;
+                transform: translateY(-250px);
+            }
         }
-        }
-        @media (max-width:830px){
+
+        @media (max-width:830px) {
             .section1 {
-            background-image: url('images/kailash\ \(17\).JPG');
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            object-fit:fill;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: arial;
-        }
-        .s1cards {
-            position: relative;
-            height: 600px;
-            border-radius: 1px;
-            /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
-            transition: 1s;
-            /*transform: translateY(150px);*/
-            padding: 30px 50px;
-            background: rgba(211, 211, 211, 0);
-            cursor: pointer;
-        }
+                background-image: url('images/kailash\ \(17\).jpg');
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                object-fit: fill;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: arial;
+            }
+
+            .s1cards {
+                position: relative;
+                height: 600px;
+                border-radius: 1px;
+                /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
+                transition: 1s;
+                /*transform: translateY(150px);*/
+                padding: 30px 50px;
+                background: rgba(211, 211, 211, 0);
+                cursor: pointer;
+            }
+
             .s1cards:hover .content {
-            opacity: 1;
-            transform: translateY(-380px);
+                opacity: 1;
+                transform: translateY(-380px);
+            }
         }
-        }
+
         .s1cards:hover .cardimages {
             /* transition: 2.5s;
     transform: translateY(-180px); */
@@ -534,11 +557,11 @@
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Destinations
                 </h3>
-                <a href="#img1"><img src="images/img (3).JPG" alt=""></a>
+                <a href="#img1"><img src="images/img (3).jpg" alt=""></a>
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Manas Sarovar Lake
                 </h3>
-                <a href="#img2"><img src="images/kailash (20).JPG" alt=""></a>
+                <a href="#img2"><img src="images/kailash (20).jpg" alt=""></a>
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Mount Kailash
                 </h3>
@@ -564,6 +587,8 @@
                 padding: 20px 60px;
                 margin: 0;
                 width: 100%;
+                height: auto;
+                position: relative;
             }
 
             .card {
@@ -600,6 +625,8 @@
 
             .demo img:target {
                 display: block;
+                position: relative;
+                width: 100%;
             }
 
             .demo img:target .demo img:first-child {
@@ -725,43 +752,56 @@
                 background-color: rgba(169, 169, 169, 0.199);
                 font-weight: bold;
             }
-            #newsletter2{
+
+            #newsletter2 {
                 display: none;
             }
+
             @media (max-width: 400px) {
-                #newsletter1{
+                #newsletter1 {
                     display: none;
                 }
-                #newsletter2{
+
+                #newsletter2 {
                     display: block;
                 }
-                #newsletter2 tr,td{
+
+                #newsletter2 tr,
+                td {
                     margin: 5px;
                     padding: 5px;
                 }
             }
+
             @media (max-width: 770px) {
-                #newsletter1{
+                #newsletter1 {
                     display: none;
                 }
-                #newsletter2{
+
+                #newsletter2 {
                     display: grid;
                     text-align: center;
                 }
-                #newsletter2 tr,td{
+
+                #newsletter2 tr,
+                td {
                     margin: 5px;
                     padding: 5px;
                 }
             }
+
             @media (max-width: 1115px) {
-                #newsletter1{
+                #newsletter1 {
                     display: none;
                 }
-                #newsletter2{
+
+                #newsletter2 {
                     display: grid;
                     text-align: center;
                 }
-                #newsletter2 tr,td{
+
+                #newsletter2 tr,
+                td {
                     margin: 5px;
                     padding: 5px;
                 }
@@ -769,9 +809,12 @@
         </style>
     </div>
     <!-- Section 7 Ends -->
-<!-- Section 8 Starts -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.2026392040375!2d77.5740795!3d12.9198943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1577ed88f517%3A0x18da735311e1c272!2sShri%20Hansaa%20Travels!5e0!3m2!1sen!2sin!4v1683896639782!5m2!1sen!2sin" width="100%" height="450" style="border: 0px; margin-top: 50px; padding-top: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!-- Section 8 Ends -->
+    <!-- Section 8 Starts -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.2026392040375!2d77.5740795!3d12.9198943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1577ed88f517%3A0x18da735311e1c272!2sShri%20Hansaa%20Travels!5e0!3m2!1sen!2sin!4v1683896639782!5m2!1sen!2sin"
+        width="100%" height="450" style="border: 0px; margin-top: 50px; padding-top: 50px;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Section 8 Ends -->
     <footer>
         <div class="row d-flex justify-content-center">
             <div class="col-md-6 pt-md-5 pb-md-2">
@@ -786,9 +829,14 @@
             </div>
             <div class="col-md-3 pt-md-5 d-flex flex-column pb-md-2 mt-md-3" style="text-align: left">
                 <h6 class="pb-md-4">ADDRESS</h6>
-                <a href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld"> <img src="images/location.png" alt="" width="30px">640, 40th Cross, 8th Block, Jayanagar, Bangalore - 560 070. Karnataka State, INDIA.</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hansaatravels@gmail.com"><img src="images/mail.png" alt="" width="30px">hansaatravels@gmail.com</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hansaatravels.com"><img src="images/mail.png" alt="" width="30px">info@hansaatravels.com</a>
+                <a
+                    href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld">
+                    <img src="images/location.png" alt="" width="30px">640, 40th Cross, 8th Block, Jayanagar, Bangalore
+                    - 560 070. Karnataka State, INDIA.</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hansaatravels@gmail.com"><img
+                        src="images/mail.png" alt="" width="30px">hansaatravels@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hansaatravels.com"><img
+                        src="images/mail.png" alt="" width="30px">info@hansaatravels.com</a>
                 <a href="tel: +91 8026543891"><img src="images/mobile_icon.png" alt="" width="30px">+91-80-2654 3891</a>
             </div>
             <!-- <div class="col-md-2 p-md-5 d-flex flex-column" style="text-align: justify;">
@@ -866,24 +914,24 @@
     </script>
     <!-- manual JavaScript Ends -->
     <!-- GetButton.io widget -->
-  <script type="text/javascript">
-    (function () {
-      var options = {
-        call: "+91 8026543891", // Call phone number
-        whatsapp: "+91 8026543891", // WhatsApp number
-        call_to_action: "Contact us on Whatsapp or through Call", // Call to action
-        button_color: "#FF6550", // Color of button
-        position: "right", // Position may be 'right' or 'left'
-        order: "call,whatsapp", // Order of buttons
-        pre_filled_message: "Thank you for your message. We will contact you soon.", // WhatsApp pre-filled message
-      };
-      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-  </script>
-  <!-- /GetButton.io widget -->
+    <script type="text/javascript">
+            (function () {
+                var options = {
+                    call: "+91 8026543891", // Call phone number
+                    whatsapp: "+91 8026543891", // WhatsApp number
+                    call_to_action: "Contact us on Whatsapp or through Call", // Call to action
+                    button_color: "#FF6550", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                    order: "call,whatsapp", // Order of buttons
+                    pre_filled_message: "Thank you for your message. We will contact you soon.", // WhatsApp pre-filled message
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+    </script>
+    <!-- /GetButton.io widget -->
 </body>
 
 </html>
