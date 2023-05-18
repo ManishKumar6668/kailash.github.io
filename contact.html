@@ -8,14 +8,11 @@
     <title>Document</title>
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="./style.css">
     <style>
         @media (max-width: 450px) {
             .logo .bird img {
@@ -539,26 +536,26 @@
                     <div class="form-column pull-right col-md-12 col-sm-12 col-xs-12">
         
                             <!--Comment Form-->
-                            <form method="post" action="mail.php">
+                            <form method="POST" action="contact.php">
                                 <div class="row clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group mb-md-3">
-                                        <input type="text" name="name" placeholder="Name *" required width="100%">
+                                        <input type="text" name="Name" placeholder="Name *" required width="100%">
                                     </div>
         
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group mb-md-3">
-                                        <input type="email" name="email" placeholder="Email *" required>
+                                        <input type="email" name="Email" placeholder="Email *" required>
                                     </div>
         
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group mb-md-3">
-                                        <input type="text" name="mobile" placeholder="Phone *" required spellcheck="false" data-ms-editor="true">
+                                        <input type="text" name="Mobile" placeholder="Phone *" required spellcheck="false" data-ms-editor="true">
                                     </div>
         
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group mb-md-3">
-                                        <input type="text" name="subject" placeholder="Subject"  spellcheck="false" data-ms-editor="true">
+                                        <input type="text" name="Subject" placeholder="Subject"  spellcheck="false" data-ms-editor="true">
                                     </div>
         
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group mb-md-3">
-                                        <textarea name="msg" placeholder="Message" spellcheck="false" data-ms-editor="true"></textarea>
+                                        <textarea name="Message" placeholder="Message" spellcheck="false" data-ms-editor="true"></textarea>
                                     </div>
                                     <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
                                         <div class="g-recaptcha" data-sitekey="6LdYw8gUAAAAAJz0J2Pns9r-7qQu1jncVKxfmEtF"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LdYw8gUAAAAAJz0J2Pns9r-7qQu1jncVKxfmEtF&amp;co=aHR0cHM6Ly9rYWlsYXNoeWF0cmEuaW46NDQz&amp;hl=en&amp;v=wqcyhEwminqmAoT8QO_BkXCr&amp;size=normal&amp;cb=lprhcce1th99" width="304" height="78" role="presentation" name="a-56f1p2pn9ko" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
@@ -693,7 +690,7 @@
                 Never Miss Your <br>Next Dream Holiday</h3>
         </div>
         <div class="col-md-7">
-            <form id="newsletter1" action="" method="post">
+            <form id="newsletter1" action="newsletter.php" method="POST">
                 <table>
                     <tr>
                         <td>
@@ -703,12 +700,12 @@
                             <input type="email" name="Email" placeholder="Your Email ID" required>
                         </td>
                         <td>
-                            <button>Subscribe</button>
+                            <button type="submit" name="submit">Subscribe</button>
                         </td>
                     </tr>
                 </table>
             </form>
-            <form id="newsletter2" action="" method="post">
+            <form id="newsletter2" action="newsletter.php" method="POST">
                 <table>
                     <tr>
                         <td>
@@ -722,7 +719,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button>Subscribe</button>
+                            <button type="submit" name="submit">Subscribe</button>
                         </td>
                     </tr>
                 </table>
@@ -910,10 +907,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
             crossorigin="anonymous"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js'></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- JavaScript cdn Ends -->
         <!-- manual JavaScript Starts -->
         <script>
