@@ -10,7 +10,7 @@ $Message = $_POST['Message'];
 //Save visitor name and entered message into one variable:
 $formcontent=" Name: $Name \r\n Email: $email \r\n Mobile: $phone\r\n Subject: $Subject\r\n Message: $Message\r\n ";
 $recipient = "hansaatravels@gmail.com";
-$headers .= "BCC: manishyashahmedia@gmail.com\r\n";
+$headers .= "BCC: thunga.manjunatha@gmail.com\r\n";
 $subject = "Inquiry from Website";
 $mailheader = "From: $email\r\n";
 $mailheader .= "Reply-To: $email\r\n";

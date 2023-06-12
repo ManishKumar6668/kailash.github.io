@@ -10,21 +10,21 @@ $phone =$_POST['Phone'];
 $formcontent="Name: $Name \r\n Email: $email \r\n Phone: $phone\r\n ";
 $recipient = "hansaatravels@gmail.com";
 $headers .= "BCC: thunga.manjunatha@gmail.com\r\n";
-$subject = "Inquiry from Website";
+$subject = "Inquiry from Website Kailash Yatra";
 $mailheader = "From: $email\r\n";
 $mailheader .= "Reply-To: $email\r\n";
 $mailheader .= "MIME-Version: 1.0\r\n";
 $mail=mail($recipient, $subject, $formcontent, $mailheader);
 if($mail)
 	{?><script>alert('Thank you for contacting us');
-	  window.location.href='by_road2.html';
+	  window.location.href='by_road3.html';
 	</script>
 
 	<?php }
 else
 {
 {?><script>alert('Cannot send mail');
-	  window.location.href='by_road.html';
+	  window.location.href='by_road2.html';
 	</script>
 
 	<?php }

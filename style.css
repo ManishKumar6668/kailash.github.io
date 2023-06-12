@@ -6,7 +6,42 @@
     padding: 0;
     font-family: Bahnschrift Condensed;
 }
+.page {
+  background-image: url('images/landscape2-44237cb6.jpeg');
+  background-position: center;
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
 
+.page a:hover {
+  color: white;
+}
+
+.page .page_title {
+  background-color: #3f3f4383;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #3f3f4383;
+  padding-bottom: 20px;
+}
+.breadcrumb a{
+  text-decoration: none;
+  color: orange;
+}
 .icon-bar {
     position: fixed;
     top: 50%;
@@ -68,7 +103,7 @@
     background-image: url('images/landscape2-44237cb6.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     overflow: hidden;
     padding: 10px 52px;
 }
@@ -93,8 +128,9 @@
     background-image: url('images/olympic-national-park-top-view.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 100%;
+    background-size: auto;
     overflow: hidden;
+    place-items: center;
 }
 .img_map_4{
     background-image: url('images/olympic-national-park-top-view.jpg');
@@ -141,12 +177,24 @@
 }
 footer{
   /* background-image: url('images/footer_image-1.jpg'); */
+  background-image: url('images/footer-bg.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
   background-color: rgb(255, 255, 255);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  padding: 50px 50px;
 }
-
+footer .copyright {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+.footer_links:hover{
+  color: #0193e0;
+}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -156,4 +204,41 @@ footer{
 }
 .material-symbols-outlined{
   color: orange;
+}
+.heading {
+  font-family: 'Satisfy', cursive;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #e99a07;
+  text-align: center;
+  padding-top: 30px;
+}
+.heading1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 75px;
+  font-weight: bolder;
+  color: #e99a07;
+  text-align: center;
+  padding-top: 30px;
+}
+.contact_links{
+  text-decoration: none;
+  color: white;
+}
+.contact_links:hover{
+  color: #e99a07;
+}
+.slider1{
+  display: none;
+}
+@media (max-width:450px){
+  .slider{
+    display: none;
+  }
+  slider1{
+    display: block;
+  }
+}
+.sub_btn:hover{
+background-color: #e99a07;
 }

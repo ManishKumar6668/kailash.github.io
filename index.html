@@ -5,15 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="shortcut icon" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <style>
         @media (max-width: 450px) {
             .logo .bird {
+                width: 60;
+            }
+
+            .logo .c-name {
+                display: none;
+            }
+
+            /* .logo .vr {
+                display: none;
+            } */
+        }
+
+        @media (max-width: 950px) {
+            .logo .bird img {
                 width: 50;
             }
 
@@ -30,23 +45,23 @@
 
 <body>
     <!-- Social Media Icons And Contact Number Starts-->
-    <div class="icon-bar" style="background-color: rgba(255, 255, 255, 0.505);">
+    <!-- <div class="icon-bar" style="background-color: rgba(255, 255, 255, 0.505);">
         <a href="#"><i class="fa-brands fa-instagram m-1" style="color: #d82b18;"></i></a>
         <a href="#"><i class="fa-brands fa-facebook m-1" style="color: #2a6ee5;"></i></a>
         <a href="#"><i class="fa-brands fa-linkedin m-1" style="color: #033281;"></i></a>
         <a href="#"><i class="fa-brands fa-twitter m-1" style="color: #3f7fee;"></i></a>
         <a href="#"><i class="fa-brands fa-youtube m-1" style="color: #eb3514;"></i></a>
-    </div>
+    </div> -->
     <!-- Social Media Icons And Contact Number Ends-->
     <!-- Navigation Bar Starts -->
-    <div class="d-flex justify-content-evenly">
+    <div class="header d-flex">
         <div class="d-flex align-items-center logo">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" class="bird" alt="Logo" width="100">
+                <img src="images/logo1.png" class="bird" alt="Logo" width="70">
             </a>
-            <div class="vr" style="height: 3rem; align-self: center;"></div>
+            <!-- <div class="vr" style="height: 3rem; align-self: center;"></div> -->
             <a class="navbar-brand" href="index.html">
-                <img src="images/company_name_logo.png" class="c-name" alt="Logo" width="250">
+                <img src="images/company_name_logo1.png" class="c-name" alt="Logo" width="250">
             </a>
         </div>
         <nav class="navbar navbar-expand-md ">
@@ -58,40 +73,28 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold">
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li> -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" aria-current="page" href="index.html"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Home
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Home</a></li>
-                                <!-- <li><a class="dropdown-item" href="home1.html">Home1</a></li>
-                                <li><a class="dropdown-item" href="home2.html">Home2</a></li> -->
-                                <!-- <li><a class="dropdown-item" href="Home1.html">Home1</a></li>
-                                <li><a class="dropdown-item" href="home4.html">Home4</a></li> -->
-                                <li><a class="dropdown-item" href="home5.html">Home1</a></li>
-                            </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about_us.html">About Shri Hansaa Travels</a></li>
+                                <li><a class="dropdown-item" href="about_us.html">Shri Hansaa Travels</a></li>
                                 <li><a class="dropdown-item" href="guidlines.html">Guidelines</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Kailash Manas Sarovar Yatra
+                                Kailash Manas Sarovar
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="kailash_yatra.html">Kailash Manas Sarovar Yatra</a></li>
+                                <li><a class="dropdown-item" href="kailash_yatra.html">Kailash Manas Sarovar Yatra</a>
+                                </li>
                                 <li><a class="dropdown-item" href="by_helicopter.html">By Helicopter (10 Days)</a></li>
                                 <li><a class="dropdown-item" href="by_road.html">By Overland (13 Days)</a></li>
                             </ul>
@@ -112,7 +115,47 @@
                 </div>
             </div>
         </nav>
+        <div class="call">
+            <!-- <a href="tel:"></a><img src="images/whatsapp_icon.png" alt="" width="30px">
+            <a href="tel:"></a><img src="images/facebook_icon.png" alt="" width="30px"> -->
+            <a href="tel: +91 8026543891"><img src="images/call_icon.png" alt="" width="40px"></a>
+        </div>
+        <style>
+            .header {
+                justify-content: space-evenly;
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
 
+            .call {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+            }
+
+            @media (max-width:450px) {
+                .call {
+                    display: none !important;
+                }
+
+                .header {
+                    justify-content: space-between;
+                }
+            }
+
+            @media (max-width:950px) {
+                .call {
+                    display: block;
+                    width: auto;
+                }
+
+                .header {
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+            }
+        </style>
     </div>
     <!-- Navigation Bar Ends -->
     <!-- Scroll Down navbar Starts -->
@@ -144,7 +187,7 @@
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">About Shri Hansaa Travels</a></li>
+                                <li><a class="dropdown-item" href="#">Shri Hansaa Travels</a></li>
                                 <li><a class="dropdown-item" href="#">Guidelines</a></li>
                             </ul>
                         </li>
@@ -190,15 +233,65 @@
     <!-- Scroll Down navbar Ends -->
 
     <!-- Section 1 Starts -->
-    <div class="d-flex" style="width: 100%; position: relative;">
-        <div class="vid" style="width: 100%; overflow: hidden; position: relative;">
-            <video src="images/banner_video_3.mp4" autoplay loop muted width="100%" height="100%"
-                style="position: relative;"></video>
-            <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AJwy18SymEo?controls=0&autoplay=1&mute=1&loop=1&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-        </div>
+    <div class="d-grid position-relative slidertop ">
+        <div class="img_slidertop"></div>
+        <style>
+            .slidertop {
+                place-items: center;
+                height: 100vh;
+            }
 
+            .img_slidertop {
+                width: 100%;
+                height: 100%;
+                background-image: url('images/slider1.jpg');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                animation: changeImage 35s linear infinite;
+            }
+
+            @media (max-width:450px) {
+                .slidertop {
+                    height: 25vh;
+                }
+            }
+
+            @keyframes changeImage {
+                0% {
+                    background-image: url('images/slider1.jpg');
+                }
+
+                15% {
+                    background-image: url('images/slider2.jpg');
+                }
+
+                30% {
+                    background-image: url('images/slider3.jpg');
+                }
+
+                45% {
+                    background-image: url('images/slider4.jpg');
+                }
+
+                60% {
+                    background-image: url('images/slider5.jpg');
+                }
+
+                75% {
+                    background-image: url('images/slider6.jpg');
+                }
+
+                95% {
+                    background-image: url('images/slider7.jpg');
+                }
+
+                100% {
+                    background-image: url('images/slider1.jpg');
+                }
+            }
+        </style>
         <!-- <div id="img_div" class="position-absolute img-area align-items-center">
-            <img src="images/NEW LOGO2-1.png" alt="" style="width: 100%;">
+            <img src="images/NEW LOGO2.png" alt="" style="width: 100%;">
         </div>
         <style>
             #img_div {
@@ -210,6 +303,7 @@
 
             #img_div img {
                 width: 100%;
+                height: 100%;
                 position: absolute;
                 top: 0;
                 left: 50%;
@@ -221,9 +315,8 @@
     <!-- Section 2 Starts -->
     <div class="d-grid m-md-5" style="place-items: center;">
         <!-- <span style="font-family: 'Satisfy', cursive; font-size: xx-large; font-weight: bolder;">Official Website
-            for</span> -->
-        <span style="font-family: 'Varela Round', sans-serif;
-    font-size:36px; font-weight: bolder; color: #3f3f43; text-align: center;">Kailash Manas
+            Of</span> -->
+        <span class="heading">Kailash Manas
             Sarovar Yatra</span>
     </div>
     <!-- Section 2 Ends -->
@@ -265,41 +358,63 @@
             </button>
         </div>
     </div> -->
-    <section class="row section1 flex justify-between">
-        <div class="s1cards col-md-6">
-            <div class="cardimages  img-fluid">
-                <img src="images/kailash (7).jpg" alt="Off Roading Car">
-            </div>
-            <div class="content">
-                <h2>By Overland (13 days)</h2>
-                <p>The newly introduced border, Kerong by China requires an arduous road journey in Nepal via
-                    Syabrubesi, the journey from Kathmandu takes approx. 8 to 10 hours to cover a distance of 140
-                    kms.because of the existing road [ .. ]<a href="by_road.html"> Read More</a>
-                </p>
+    <section class="section1">
+        <div class="row row_1">
+            <div class="s1cards col-md-6">
+                <div class="cardimages  img-fluid">
+                    <img src="images/kailash (7).jpg" alt="Off Roading Car">
+                </div>
+                <div class="content">
+                    <h2>By Overland (13 days)</h2>
+                    <p>The newly introduced border, Kerong by China requires an arduous road journey in Nepal via
+                        Syabrubesi, the journey from Kathmandu takes approx. 8 to 10 hours to cover a distance of 140
+                        kms.because of the existing road [ .. ]
+                    </p><a href="by_road.html"
+                        style="background-color: lightgray; padding: 10px 20px; border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">Read
+                        More</a>
 
+                </div>
+            </div>
+
+            <div class="s1cards col-md-6">
+                <div class="cardimage2">
+                    <img src="images/kailash (65).jpg" alt="Helicopter">
+                </div>
+                <div class="content">
+                    <h2>By Helicopter (10 days)</h2>
+                    <p>Lots of people have misconception about this route thinking they will make the Manasa Sarovara
+                        and
+                        Kailash Parikrama by Helicopter which is not the case. This route can be undertaken by yatris
+                        who
+                        are financially sound [ .. ]
+                    </p><a href="by_helicopter.html"
+                        style="background-color: lightgray; padding: 10px 20px; border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">Read
+                        More</a>
+
+                </div>
+            </div>
+            <div class="s1cards col-md-6">
+                <div class="cardimage2">
+                    <img src="images/slider6.jpg" alt="Helicopter">
+                </div>
+                <div class="content">
+                    <h2>Mukhtinath (8 Days)</h2>
+                    <p>The central shrine of Sri Muktinath is considered one of the eight most sacred shrines for Hindu
+                        Vaishnavas known as Svayam Vyakta Ksetras , the other seven being Srirangam, Srimushnam,
+                        Tirupati, Naimisharanya, Thotadri, Pushkar and Badrinath.[ .. ]
+                    </p><a href="mukhtinath.html"
+                        style="background-color: lightgray; padding: 10px 20px; border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">Read
+                        More</a>
+
+                </div>
             </div>
         </div>
-
-        <div class="s1cards col-md-6">
-            <div class="cardimage2">
-                <img src="images/kailash (65).jpg" alt="Helicopter">
-            </div>
-            <div class="content">
-                <h2>By Helicopter (10 days)</h2>
-                <p>Lots of people have misconception about this route thinking they will make the Manasa Sarovara and
-                    Kailash Parikrama by Helicopter which is not the case. This route can be undertaken by yatris who
-                    are financially sound [ .. ] <a href="by_helicopter.html">Read More</a>
-                </p>
-
-            </div>
-        </div>
-
     </section>
     <style>
         .section1 {
-            background-image: url('images/kailash\ \(17\).jpg');
+            background-image: url('images/olympic-national-park-top-view.jpg');
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: auto 100%;
             object-fit: fill;
             display: flex;
             justify-content: center;
@@ -307,9 +422,14 @@
             font-family: arial;
         }
 
+        .row_1 {
+            display: flex;
+            justify-content: center;
+        }
+
         .s1cards {
             position: relative;
-            height: 600px;
+            height: auto;
             border-radius: 1px;
             /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
             transition: 1s;
@@ -317,6 +437,12 @@
             padding: 30px 50px;
             background: rgba(211, 211, 211, 0);
             cursor: pointer;
+        }
+
+        @media (max-width:450px) {
+            .s1cards {
+                padding: 20px 10px;
+            }
         }
 
         /* .s1cards:hover{
@@ -344,7 +470,7 @@
 
         .content {
             width: 100%;
-            padding: 10px 20px;
+            padding: 10px 0px;
             text-align: center;
             transform: translateY(-300px);
             opacity: 0;
@@ -370,7 +496,7 @@
 
             .s1cards {
                 position: relative;
-                height: 450px;
+                height: 100px;
                 border-radius: 1px;
                 /* box-shadow: 0px 5px 20px rgb(149, 149, 164); */
                 transition: 1s;
@@ -416,16 +542,16 @@
             }
         }
 
-        .s1cards:hover .cardimages {
-            /* transition: 2.5s;
-    transform: translateY(-180px); */
+        /* .s1cards:hover .cardimages {
+            transition: 2.5s;
+    transform: translateY(-180px);
 
-        }
+        } */
 
-        .s1cards:hover .cardimage2 {
-            /* transition: 2.5s;
-    transform: translateY(-125px); */
-        }
+        /* .s1cards:hover .cardimage2 {
+            transition: 2.5s;
+    transform: translateY(-125px);
+        } */
 
         .s1cards:hover img {
             transition: 2.5s;
@@ -445,11 +571,10 @@
     </style>
     <!-- Section 3 Ends -->
     <!-- Section 4 Stars -->
+    <h1 class="heading">
+        Places To Go
+    </h1>
     <section class=" img_map mt-5 position-relative h-auto">
-        <h1
-            style="font-family: 'Satisfy', cursive; font-size: 85px; color: rgb(255, 255, 255); padding-top: 30px; padding-left: 50px; text-align: left;">
-            Places To Go
-        </h1><br>
         <!-- <div class="row">
             <div class="col-md-3 m-xl-4">
                 <div class="card_img mb-lg-5" style="padding-left: 40px;">
@@ -507,26 +632,26 @@
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Destinations
                 </h3>
-                <a href="#img1"><img src="images/img (3).jpg" alt=""></a>
+                <a href="#Mansarovar"><img src="images/out.png" alt=""></a>
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Manas Sarovar Lake
                 </h3>
-                <a href="#img2"><img src="images/kailash (20).jpg" alt=""></a>
+                <a href="#Kailash"><img src="images/kailash (20).jpg" alt=""></a>
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Mount Kailash
                 </h3>
-                <a href="#img3"><img src="images/mukhtinath.jpg" alt=""></a>
+                <a href="#Mukhtinath"><img src="images/mukhtinath.jpg" alt=""></a>
                 <h3 style="background-color: white; text-align: center; font-family: 'Satisfy', cursive;">
                     Mukhtinath
                 </h3>
             </div>
             <div class="col-md-1"></div>
             <div class="demo col-md-8">
-                <img id="img1" src="images/Manas Sarovar Map.png" alt="" width="200px">
+                <img id="Mansarovar" src="images/Manas-Sarovar-Map.png" alt="" width="200px">
 
-                <img id="img2" src="images/kailash-tour-map.png" alt="">
+                <img id="Kailash" src="images/kailash-tour-map.png" alt="">
 
-                <img id="img3" src="images/mukhtinath_map.jpg" alt="">
+                <img id="Mukhtinath" src="images/mukhtinath_map.webp" alt="" width="500px">
 
             </div>
         </div>
@@ -586,61 +711,127 @@
     </section>
     <!-- Section 4 Ends -->
     <!-- Section 4.1 Starts -->
+    <section>
+        <h1 class="heading">
+            About Us
+        </h1><br>
+        <div class="pt-md-2"
+            style="background-image: url('images/kailash (17).jpg'); background-position: center; background-size: 100% 100%;">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column text-center">
+                    <span
+                        style="font-family: 'Satisfy',cursive; font-size: 40px; font-weight: bolder; padding: 20px; color: black;">Why
+                        Us ?</span>
+                    <div class="row">
+                        <div class="col-md-12 d-flex mb-md-5 justify-content-evenly" style="color: white;">
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">100%</span>
+                                <span class="lower_text">Money Safe</span>
+                            </div>
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">30+
+                                    Years</span>
+                                <span class="lower_text">Travel Experience</span>
+                            </div>
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">10,000+</span>
+                                <span class="lower_text">Happy Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-evenly" style="color: white;">
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">25+
+                                    Team</span>
+                                <span class="lower_text">& Ground Experts</span>
+                            </div>
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">24/7</span>
+                                <span class="lower_text">Support</span>
+                            </div>
+                            <div class="cir d-flex flex-column text-center">
+                                <span class="upper_text">Family
+                                    & Group</span>
+                                <span class="lower_text">Discounts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .cir {
+                        box-shadow: 1px 1px 10px gray;
+                        padding: 20px;
+                        width: 200px;
+                        height: 200px;
+                        border: 5px solid black;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100px;
+                        margin-right: 2px;
+                        background-color: #0193e0;
+                    }
 
-    <section style="background-image: url('images/mukhtinath\ \(23\).jpg'); background-repeat: no-repeat; background-position: center; background-size: auto;">
-        <div class="d-grid" style="place-items: center; background-color: #3f3f43b2;">
-            <h1
-                style="font-family: 'Satisfy', cursive; font-size: 85px; color: orangered; padding-top: 30px; padding-left: 50px; text-align: center;">
-                About Us
-            </h1>
-        </div>
-        <div class="row" style=" background-color: #3f3f43b2; padding: 30px 0px;">
-            <div class="col-md-4 d-flex" style="justify-content: space-evenly">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="padding-right: 30px;">
-                    <img src="images/safe.png" alt="" width="130px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">100%</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">Money Safe</span>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center"style="padding-right: 30px;">
-                    <img src="images/people.png" alt="" width="130px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">10+ Years</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">Travel Experience</span>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex" style="justify-content: space-evenly; padding: 0; align-items: baseline;">
-                <div class="d-flex flex-column justify-content-center align-items-center"style="padding-right: 30px;">
-                    <img src="images/ratings.png" alt="" width="130px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">10,000+</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">Happy Customers</span>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="images/group.png" alt="" width="200px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">25+ Team</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">& Ground Experts</span>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex" style="justify-content: space-evenly; padding: 0; align-items: baseline;">
-                <div class="d-flex flex-column justify-content-center align-items-center"style="padding-right: 30px;">
-                    <img src="images/customercare.png" alt="" width="130px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">24/7</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">Support</span>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="images/discount.png" alt="" width="130px">
-                    <span style="font-size: xx-large; font-weight: bolder; color: whitesmoke;">Family & Group</span>
-                    <span style="font-size: x-large; font-weight: bold; color: orangered;">Discounts</span>
+                    .cir .lower_text {
+                        font-size: larger;
+                        font-weight: bold;
+                    }
+
+                    .cir .upper_text {
+                        font-size: xx-large;
+                        font-weight: bold;
+                        text-decoration: underline orange;
+                    }
+
+                    .cir:hover {
+                        box-shadow: 1px 3px 10px rgb(113, 206, 212);
+                        background-color: honeydew;
+                        cursor: pointer;
+                        color: black;
+                    }
+
+                    @media (max-width:450px) {
+                        .cir {
+                            width: 140px;
+                            height: 140px;
+                            border-radius: 70px;
+                            padding: 5px;
+
+                        }
+
+                        .cir .upper_text {
+                            font-size: large;
+                        }
+                    }
+                </style>
+                <div class="col-md-6 ">
+                    <div class="me-md-5">
+                        <img src="images/kailash (12).jpg" alt="" width="100%">
+                    </div>
+                    <div class="p-md-3 me-md-5 mb-md-2" style="background-color: whitesmoke; padding: 8px;">
+                        <p style="font-size: large; text-align: justify;">
+                            At Shri Hansaa Travels, you will find a team of dedicated professionals, each contributing
+                            their optimum expertise to deliver and ensure complete satisfaction of our clients.
+                        <p style="font-size: large; text-align: justify;">
+                            Our team of tour planners and designers, expert tour organizers and professional tour
+                            guides together with our friendly staff members, strive to give the guests an authentic
+                            and rich holiday experience. We believe that when you are discovering a foreign land,
+                            what you need is one who understands your requirements; a specialist who knows the
+                            destination, whose care and concern you can depend on - indeed a person with whom you
+                            can share your travel experience.
+                            <a href="about_us.html">Read More</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Section 4.1 Ends -->
-
     <!-- Section 5 Starts -->
-    <section style="padding: 0px 50px;">
-        <h1
-            style="font-family: 'Satisfy', cursive; font-size: 85px; color: rgb(49, 46, 46); padding-top: 30px; padding-left: 50px; text-align: center;">
-            Gallery
-        </h1><br>
+    <section>
+        <h1 class="heading">
+           Our Travellers
+        </h1>
         <div class="row">
             <div class="col-md-3" style="padding: 10px;">
                 <img src="images/kailash (6).jpg" alt="" width="100%">
@@ -669,18 +860,280 @@
                 <img src="images/mukhtinath (11).jpg" alt="" width="100%">
             </div>
         </div>
+        <div class="button w-100 d-flex justify-content-center align-items-end">
+            <a href="gallery1.html"><input type="button" value="Go To Gallery" class="gallery_btn"></a>
+        </div>
+        <style>
+            .button{
+                height: 50px;
+            }
+            .gallery_btn{
+                padding: 10px 30px;
+                font-size: larger;
+                background-color: orange;
+                color: white;
+                border-radius: 15px;
+                box-shadow: 2px 2px 15px gray;
+                text-transform: uppercase;
+            }
+            .gallery_btn:hover{
+                color: black;
+                background-color: white;
+            }
+        </style>
     </section><br><br>
     <!-- Section 5 Ends -->
     <!-- Section 6 Starts -->
-    <!-- <h1
-        style="font-family: 'Satisfy', cursive; font-size: 85px; color: rgb(243, 152, 6); padding-top: 30px; padding-left: 50px; text-align: center;">
-        Our Official Website
+    <h1 class="heading">
+        Testimonials
     </h1><br>
-    <section class="other">
-        <div>
-            <a href="https://hansaatravels.com/">Shri Hansaa Travels</a>
+    <div class="slider">
+        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
+        <input type="radio" name="slider" title="slide2" class="slider__nav" />
+        <input type="radio" name="slider" title="slide3" class="slider__nav" />
+        <input type="radio" name="slider" title="slide4" class="slider__nav" />
+        <input type="radio" name="slider" title="slide5" class="slider__nav" />
+        <input type="radio" name="slider" title="slide6" class="slider__nav" />
+        <input type="radio" name="slider" title="slide7" class="slider__nav" />
+        <input type="radio" name="slider" title="slide8" class="slider__nav" />
+        <div class="slider__inner">
+            <div class="slider__contents"><img src="images/person1.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Shivaprasad Srikantiah</h2>
+                <p class="slider__txt">"Kailash Yatra was a journey of self-discovery for me. The sacred mountain and
+                    the surrounding environment helped me connect with my innermost self and find a deeper sense of
+                    purpose."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person3.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Ramam</h2>
+                <p class="slider__txt">"Words fail to capture the magnificence of the Kailash Yatra. It is a sacred odyssey that evokes deep reverence and leaves an indelible mark on your soul."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person2.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Padmavathi Prasad</h2>
+                <p class="slider__txt">"The Kailash Yatra exceeded all my expectations. It was a perfect blend of
+                    adventure, spirituality, and natural beauty. I will forever cherish the memories and the profound
+                    spiritual experience I had during the journey."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person4.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Suresh</h2>
+                <p class="slider__txt">"Kailash Yatra was a transformative experience that took me on a journey within. It revealed the power of faith, the beauty of simplicity, and the joy of surrendering to a higher force."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person6.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Seshagiri Rao</h2>
+                <p class="slider__txt">"Kailash Yatra was a testament to the indomitable human spirit. The challenging
+                    trek, combined with the mesmerizing surroundings, pushed me beyond my limits and allowed me to
+                    realize my true potential."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person8.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Giridhar Koppikar</h2>
+                <p class="slider__txt">"The Kailash Yatra challenged my limits, tested my endurance, and rekindled my faith. It is a pilgrimage that pushes you beyond your boundaries and rewards you with spiritual abundance."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person7.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Soumya</h2>
+                <p class="slider__txt">"The Kailash Yatra provided a glimpse into a world that transcends the ordinary.
+                    It was a journey that rejuvenated my soul, ignited my faith, and left me with a profound sense of
+                    gratitude."</p>
+            </div>
+            <div class="slider__contents"><img src="images/person5.jpg" alt="" width="100px" style="border: 5px solid white; border-radius: 50px;">
+                <h2 class="slider__caption">Jayanth Pathak</h2>
+                <p class="slider__txt">"Kailash Yatra is not just a physical pilgrimage, but a profound inner journey that touches the core of your being. It leaves you in awe of nature's grandeur and the power of devotion." </p>
+            </div>
         </div>
-    </section> -->
+    </div>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 75%;
+        }
+
+        body {
+            color: #444;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .slider {
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            background-image: url(images/kailash\(32\).webp);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -webkit-box-align: end;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+        @media (max-width:450px){
+            .slider{
+                background-size: auto 100%;
+            }
+        }
+        .slider__nav {
+            width: 12px;
+            height: 12px;
+            margin: 2rem 12px;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 10;
+            outline: 6px solid #ccc;
+            outline-offset: -6px;
+            box-shadow: 0 0 0 0 #d82b2b, 0 0 0 0 rgba(214, 17, 17, 0);
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .slider__nav:checked {
+            -webkit-animation: check 0.4s linear forwards;
+            animation: check 0.4s linear forwards;
+        }
+
+        .slider__nav:checked:nth-of-type(1)~.slider__inner {
+            left: 0%;
+        }
+
+        .slider__nav:checked:nth-of-type(2)~.slider__inner {
+            left: -100%;
+        }
+
+        .slider__nav:checked:nth-of-type(3)~.slider__inner {
+            left: -200%;
+        }
+
+        .slider__nav:checked:nth-of-type(4)~.slider__inner {
+            left: -300%;
+        }
+        .slider__nav:checked:nth-of-type(5)~.slider__inner {
+            left: -400%;
+        }
+        .slider__nav:checked:nth-of-type(6)~.slider__inner {
+            left: -500%;
+        }
+        .slider__nav:checked:nth-of-type(7)~.slider__inner {
+            left: -600%;
+        }
+        .slider__nav:checked:nth-of-type(8)~.slider__inner {
+            left: -700%;
+        }
+
+        .slider__inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800%;
+            height: 100%;
+            -webkit-transition: left 0.4s;
+            transition: left 0.4s;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        }
+
+        .slider__contents {
+            height: 100%;
+            padding: 2rem;
+            text-align: center;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            -webkit-flex-flow: column nowrap;
+            -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        .slider__image {
+            font-size: 2.7rem;
+            border: 5px solid white;
+        }
+
+        .slider__caption {
+            font-weight: 500;
+            margin: 2rem 0 1rem;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 2px 5px;
+            font-size: larger;
+        }
+
+        .slider__txt {
+            color: #111111;
+            margin-bottom: 3rem;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 5px;
+            max-width: 300px;
+            background-color: white;
+        }
+
+        @-webkit-keyframes check {
+            50% {
+                outline-color: #333;
+                box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+            }
+
+            100% {
+                outline-color: #333;
+                box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+            }
+        }
+
+        @keyframes check {
+            50% {
+                outline-color: #333;
+                box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+            }
+
+            100% {
+                outline-color: #333;
+                box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+            }
+        }
+    </style>
     <!-- Section 6 Ends -->
     <!-- Section 7 Starts -->
     <div class="container-fluid row d-flex align-items-center justify-content-md-evenly pt-md-5 pb-md-5 bg-dark">
@@ -700,7 +1153,7 @@
                             <input type="email" name="Email" placeholder="Your Email ID" required>
                         </td>
                         <td>
-                            <button type="submit" name="submit">Subscribe</button>
+                            <button type="submit" name="submit" class="sub_btn">Subscribe</button>
                         </td>
                     </tr>
                 </table>
@@ -719,7 +1172,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button type="submit" name="submit">Subscribe</button>
+                            <button type="submit" name="submit" class="sub_btn">Subscribe</button>
                         </td>
                     </tr>
                 </table>
@@ -810,144 +1263,222 @@
     </div>
     <!-- Section 7 Ends -->
     <!-- Section 8 Starts -->
-    <div">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.2026392040375!2d77.5740795!3d12.9198943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1577ed88f517%3A0x18da735311e1c272!2sShri%20Hansaa%20Travels!5e0!3m2!1sen!2sin!4v1683896639782!5m2!1sen!2sin"
-            width="100%" height="450" style="border: 0px; margin-top: 50px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!-- Section 8 Ends -->
-        <footer>
-            <div class="row d-flex ">
-                <div class="col-md-6 pt-md-5 pb-md-2">
-                    <div class="d-flex text-center">
-                        <a href="index.html"><img src="images/header_logo.png" alt="" width="70%"></a>
-                    </div>
-                    <p
-                        style="text-align: justify; font-size: large; font-family: Bahnschrift Condensed; padding: 0px 50px;">
-                        We introduce ourselves as a fast growing Tour Operator and Travel Agent based at Bangalore and
-                        has
-                        been in the tourism business since 1990. <br><br>
-                        &copy; 2023 | Shri Hansaa Travels | All rights reserved
-                    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d972.2026392040375!2d77.5740795!3d12.9198943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1577ed88f517%3A0x18da735311e1c272!2sShri%20Hansaa%20Travels!5e0!3m2!1sen!2sin!4v1683896639782!5m2!1sen!2sin"
+        width="100%" height="450" style="border: 0px; margin-top: 50px; padding-top: 50px;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Section 8 Ends -->
+    <!-- <footer>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 pt-md-5 pb-md-2" style="padding-left: 50px; text-align: center;">
+                <div class="d-flex text-center">
+                    <a href="index.html"><img src="images/header_logo.png" alt="" width="100%"></a>
                 </div>
-                <div class="col-md-3 d-flex flex-column" style="text-align: left; padding: 20px 50px; ">
-                    <h6 class="pb-md-4">ADDRESS</h6>
-                    <a
-                        href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld">
-                        <img src="images/location.png" alt="" width="30px">640, 40th Cross, 8th Block, Jayanagar,
-                        Bangalore
-                        - 560 070. Karnataka State, INDIA.</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hansaatravels@gmail.com"><img
-                            src="images/mail.png" alt="" width="30px">hansaatravels@gmail.com</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hansaatravels.com"><img
-                            src="images/mail.png" alt="" width="30px">info@hansaatravels.com</a>
-                    <a href="tel: +91 8026543891"><img src="images/mobile_icon.png" alt="" width="30px">+91-80-2654
-                        3891</a>
-                </div>
-                <!-- <div class="col-md-2 p-md-5 d-flex flex-column" style="text-align: justify;">
-            <h6 class="pb-md-4">FIND US ON</h6>
-            <a href="#"><i class="fa-brands fa-instagram m-1"
-                    style="color: #d82b18; transform: translateY(6px);"></i> Instagram</a>
-            <a href="#"><i class="fa-brands fa-facebook m-1"
-                    style="color: #2a6ee5; transform: translateY(6px);"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-linkedin m-1"
-                    style="color: #033281; transform: translateY(6px);"></i> Linkedin</a>
-            <a href="#"><i class="fa-brands fa-twitter m-1" style="color: #3f7fee; transform: translateY(6px);"></i>
-                Twitter</a>
-            <a href="#"><i class="fa-brands fa-youtube m-1" style="color: #eb3514; transform: translateY(6px);"></i>
-                Youtube</a>
-        </div> -->
-                <div class="col-md-1"></div>
-                <div class="col-md-2 d-flex flex-column mt-md-3" style="text-align: justify; padding: 20px 50px;">
-                    <h6 class="pb-md-4">HANSAA TRAVELS</h6>
-                    <a href="about_us.html"><img src="images/about.png" alt="" width="20px"> About Us</a>
-                    <a href="contact.html"><img src="images/communicate.png" alt="" width="20px"> Contact Us</a>
-                </div>
-                <!-- <div class="col-md-1 pt-md-5 d-flex flex-column" style="text-align: justify;">
-            <h6 class="pb-md-4">OTHER LINKS</h6>
-            <a href="kailash_yatra.html"><img src="images/man.png" alt="" width="20px"> Kailash Yatra</a>
-            <a href="mukhtinath.html"><img src="images/temple.png" alt="" width="20px"> Mukhtinath</a>
-            <a href="by_helicopter.html"><img src="images/helicopter.png" alt="" width="20px"> By Helicopter</a>
-            <a href="by_overland.html"><img src="images/off-road.png" alt="" width="20px"> By Overland</a>
-        </div> -->
-                <style>
-                    a {
-                        text-decoration: none;
-                        padding: 5px 0px;
-                        color: orange;
-                        font-weight: bold;
-                    }
-
-                    a:hover {
-                        color: blue;
-                    }
-
-                    @media (max-width: 400px) {
-                        p {
-                            font-size: small;
-                        }
-
-                        .col-md-2 {
-                            padding-top: 10px;
-                        }
-                    }
-                </style>
+                <p style="text-align: justify; font-size: large; font-family: Bahnschrift Condensed;">
+                    <br><br>
+                    &copy; 2023 | Shri Hansaa Travels. <br> All rights reserved
+                </p>
             </div>
-        </footer>
+            <div class="col-md-3 pt-md-5 d-flex flex-column pb-md-2 mt-md-3"
+                style="text-align: center;  padding-left: 50px;">
+                <h6 class="pb-md-4">ADDRESS</h6>
+                <a
+                    href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld">
+                    <img src="images/location.png" alt="" width="30px">640, 40th Cross, 8th Block, Jayanagar, Bangalore
+                    - 560 070. Karnataka State, INDIA.</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hansaatravels@gmail.com"><img
+                        src="images/mail.png" alt="" width="30px">hansaatravels@gmail.com</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hansaatravels.com"><img
+                        src="images/mail.png" alt="" width="30px">info@hansaatravels.com</a>
+                <a href="tel: +91 8026543891"><img src="images/mobile_icon.png" alt="" width="30px">+91-80-2654 3891</a>
+            </div>
+            <div class="col-md-3 p-md-5 d-flex flex-column" style="text-align: center; padding-left: 50px;">
+                <h6 class="pb-md-4">FIND US ON</h6>
+                <a href="#"><i class="fa-brands fa-instagram m-1"
+                        style="color: #d82b18; transform: translateY(6px);"></i> Instagram</a>
+                <a href="#"><i class="fa-brands fa-facebook m-1"
+                        style="color: #2a6ee5; transform: translateY(6px);"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-linkedin m-1"
+                        style="color: #033281; transform: translateY(6px);"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-twitter m-1" style="color: #3f7fee; transform: translateY(6px);"></i>
+                    Twitter</a>
+                <a href="#"><i class="fa-brands fa-youtube m-1" style="color: #eb3514; transform: translateY(6px);"></i>
+                    Youtube</a>
+            </div>
+            <div class="col-md-3 pt-md-5 d-flex flex-column pb-md-2 mt-md-3"
+                style="text-align: justify; padding-left: 50px;">
+                <h6 class="pb-md-4">HANSAA TRAVELS</h6>
+                <a href="about_us.html"><img src="images/about.png" alt="" width="20px"> About Us</a>
+                <a href="contact.html"><img src="images/communicate.png" alt="" width="20px"> Contact Us</a>
+            </div>
+           <div class="col-md-1 pt-md-5 d-flex flex-column" style="text-align: justify;">
+                <h6 class="pb-md-4">OTHER LINKS</h6>
+                <a href="kailash_yatra.html"><img src="images/man.png" alt="" width="20px"> Kailash Yatra</a>
+                <a href="mukhtinath.html"><img src="images/temple.png" alt="" width="20px"> Mukhtinath</a>
+                <a href="by_helicopter.html"><img src="images/helicopter.png" alt="" width="20px"> By Helicopter</a>
+                <a href="by_overland.html"><img src="images/off-road.png" alt="" width="20px"> By Overland</a>
+            </div> 
+            <style>
+                a {
+                    text-decoration: none;
+                    padding: 5px 0px;
+                    color: orange;
+                    font-weight: bold;
+                }
 
+                a:hover {
+                    color: blue;
+                }
+            </style>
+        </div>
+    </footer> -->
+    <footer>
+        <div class="row">
+            <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <div class="footer_image">
+                    <img src="images/header_logo.png" alt="" width="100%">
+                </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <span class="footer_headings">Important Links</span>
+                <a class="footer_links" href="index.html">Home</a>
+                <a class="footer_links" href="kailash_yatra.html">Kailash Manas Sarovar</a>
+                <a class="footer_links" href="by_helicopter.html">By Helicopter (10 Days)</a>
+                <a class="footer_links" href="by_road.html">By Overland (13 Days)</a>
+                <a class="footer_links" href="mukhtinath.html">Mukhtinath (8 Days)</a>
+            </div>
+            <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                <span class="footer_headings">More Useful Links</span>
+                <a class="footer_links" href="about_us.html">About Us</a>
+                <a class="footer_links" href="gallery1.html">Gallery</a>
+                <a class="footer_links" href="contact.html">Contact Us</a>
+                <a class="footer_links"
+                    href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld">Maps</a>
+                <a class="footer_links" href="about_us.html">Guidelines</a>
+            </div>
+            <div class="col-md-3  d-flex flex-column justify-content-center align-items-center">
+                <span class="footer_headings">Get in Touch</span>
+                <a class="footer_links"
+                    href="https://www.google.com/maps/place/Shri+Hansaa+Travels/@12.9198943,77.5740795,19z/data=!4m6!3m5!1s0x3bae1577ed88f517:0x18da735311e1c272!8m2!3d12.9199903!4d77.5746366!16s%2Fg%2F1td79lld">
+                    640, 40th Cross, Jayanagar, Bangalore</a>
+                <a class="footer_links"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=hansaatravels@gmail.com">hansaatravels@gmail.com</a>
+                <a class="footer_links"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@hansaatravels.com">info@hansaatravels.com</a>
+                <a class="footer_links" href="tel: +91 8026543891">+91-80265 43891</a>
+                <a class="footer_links" href="tel: +91 9341215612">+91-93412 15612</a>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <span>Copyrights &copy; 2023 | Shri Hansaa Travels | All rights Reserved.</span>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <a class="social" href="www.facebook.com"><img src="images/facebook_icon.png" alt="" width="30px"></a>
+                <a class="social" href="www.youtube.com"><img src="images/youtube_icon.png" alt="" width="30px"></a>
+                <a class="social" href="www.linkedin.com"><img src="images/linkedin_icon.png" alt="" width="30px"></a>
+                <a class="social" href="www.instagram.com"><img src="images/instagram_icon.png" alt="" width="30px"></a>
+            </div>
+        </div>
+        <style>
+            .social {
+                padding: 10px 10px;
+            }
 
+            .copyright {
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.548);
+            }
 
-        <!-- JavaScript cdn Starts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
-        <script src="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous"></script>
-        <!-- JavaScript cdn Ends -->
-        <!-- manual JavaScript Starts -->
-        <script>
-            // When the user scrolls down 20px from the top of the document, slide down the navbar
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    document.getElementById("navbar").style.top = "-120px";
+            @media (max-width:450px) {
+                .copyright {
+                    flex-direction: column-reverse;
                 }
             }
-        </script>
-        <script>
-            $(window).scroll(function () {
-                var scroll = $(window).scrollTop();
-                $(".img-area img").css({
-                    width: (100 + scroll / 5) + "%"
-                })
+
+            .footer_links {
+                text-decoration: none;
+                font-size: large;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: orangered;
+                line-height: 40px;
+            }
+
+            .footer_headings {
+                text-transform: uppercase;
+                font-size: larger;
+                font-weight: bolder;
+            }
+        </style>
+    </footer>
+
+
+    <!-- JavaScript cdn Starts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript cdn Ends -->
+    <!-- manual JavaScript Starts -->
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-120px";
+            }
+        }
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            $(".img-area img").css({
+                width: (100 + scroll / 5) + "%"
             })
-        </script>
-        <!-- manual JavaScript Ends -->
-        <!-- GetButton.io widget -->
-  <script type="text/javascript">
-    (function () {
-      var options = {
-        call: "+91 8026543891", // Call phone number
-        whatsapp: "+91 8026543891", // WhatsApp number
-        call_to_action: "Contact us on Whatsapp or through Call", // Call to action
-        button_color: "#FF6550", // Color of button
-        position: "right", // Position may be 'right' or 'left'
-        order: "call,whatsapp", // Order of buttons
-        pre_filled_message: "Thank you for your message. We will contact you soon.", // WhatsApp pre-filled message
-      };
-      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-  </script>
-  <!-- /GetButton.io widget -->
+        })
+    </script>
+    <!-- Testimonial Carousel javascript Starts-->
+    <!-- <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                padding: 200
+            });
+            autoplay();
+            function autoplay(){
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500)
+            }
+        });
+    </script> -->
+    <!-- Testimonial Carousel javascript Ends-->
+    <!-- manual JavaScript Ends -->
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+            (function () {
+                var options = {
+                    call: "+91 8026543891", // Call phone number
+                    whatsapp: "+91 9341215612", // WhatsApp number
+                    call_to_action: "Contact us on Whatsapp or through Call", // Call to action
+                    button_color: "#FF6550", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                    order: "call,whatsapp", // Order of buttons
+                    pre_filled_message: "Thank you for your message. We will contact you soon.", // WhatsApp pre-filled message
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+    </script>
+    <!-- /GetButton.io widget -->
 </body>
 
 </html>
