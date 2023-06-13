@@ -7,7 +7,7 @@
     font-family: Bahnschrift Condensed;
 }
 .page {
-  background-image: url('images/landscape2-44237cb6.jpeg');
+  background-image: url('images/landscape2-44237cb6.webp');
   background-position: center;
   background-size: auto auto;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@
 }
 
 .img_map{
-    background-image: url('images/landscape2-44237cb6.jpeg');
+    background-image: url('images/landscape2-44237cb6.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -109,7 +109,7 @@
 }
 @media (max-width:450px){
   .img_map{
-    background-image: url('images/landscape2-44237cb6.jpeg');
+    background-image: url('images/landscape2-44237cb6.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -118,14 +118,14 @@
 }
 }
 .img_map_1{
-    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-image: url('images/olympic-national-park-top-view.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
     overflow: hidden;
 }
 .img_map_2{
-    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-image: url('images/olympic-national-park-top-view.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -133,7 +133,7 @@
     place-items: center;
 }
 .img_map_4{
-    background-image: url('images/olympic-national-park-top-view.jpg');
+    background-image: url('images/olympic-national-park-top-view.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto auto;
@@ -141,7 +141,7 @@
 }
 
 .other{
-    background-image: url('images/landscape2-44237cb6.jpeg');
+    background-image: url('images/landscape2-44237cb6.webp');
     background-repeat: no-repeat;
 }
 .other div{
@@ -176,8 +176,8 @@
     text-shadow: 1px 1px 2px orange;
 }
 footer{
-  /* background-image: url('images/footer_image-1.jpg'); */
-  background-image: url('images/footer-bg.png');
+  /* background-image: url('images/footer_image-1.webp'); */
+  background-image: url('images/footer-bg.webp');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -242,3 +242,4 @@ footer .copyright {
 .sub_btn:hover{
 background-color: #e99a07;
 }
+
